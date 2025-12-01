@@ -545,11 +545,7 @@
     </attr>
     <bool name="abc_action_bar_embed_tabs">true</bool>
     <bool name="abc_config_actionMenuItemAllCaps">true</bool>
-    <bool name="enable_system_alarm_service_default">true</bool>
-    <bool name="enable_system_foreground_service_default">true</bool>
-    <bool name="enable_system_job_service_default">false</bool>
     <bool name="mtrl_btn_textappearance_all_caps">true</bool>
-    <bool name="workmanager_test_configuration">false</bool>
     <color name="abc_decor_view_status_guard">#ff000000</color>
     <color name="abc_decor_view_status_guard_light">#ffffffff</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>
@@ -622,7 +618,7 @@
     <color name="foreground_material_light">@android:color/black</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
-    <color name="ic_launcher_background">#263238</color>
+    <color name="ic_launcher_background">#000000</color>
     <color name="m3_ref_palette_black">#ff000000</color>
     <color name="m3_ref_palette_error0">#ff000000</color>
     <color name="m3_ref_palette_error10">#ff410e0b</color>
@@ -870,6 +866,8 @@
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4Dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
     <color name="ripple_material_dark">#33ffffff</color>
     <color name="ripple_material_light">#1f000000</color>
     <color name="secondary_text_default_material_dark">#b3ffffff</color>
@@ -880,6 +878,7 @@
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
+    <color name="teal_200">#03DAC5</color>
     <color name="tooltip_background_dark">#e6616161</color>
     <color name="tooltip_background_light">#e6FFFFFF</color>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
@@ -1750,7 +1749,6 @@
     <item name="mtrl_internal_children_alpha_tag" type="id"/>
     <item name="mtrl_motion_snapshot_view" type="id"/>
     <item name="mtrl_view_tag_bottom_padding" type="id"/>
-    <item name="nav_controller_view_tag" type="id"/>
     <item name="navigation_bar_item_active_indicator_view" type="id"/>
     <item name="navigation_bar_item_icon_container" type="id"/>
     <item name="navigation_bar_item_icon_view" type="id"/>
@@ -6572,7 +6570,7 @@
     <item name="windowActionBar">false</item>
     <item name="windowNoTitle">true</item>
   </style>
-    <style name="Theme.Okovision" parent="Theme.Material3.DayNight.NoActionBar"/>
+    <style name="Theme.Okovision" parent="Theme.Material3.Dark.NoActionBar"/>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Dark" parent="Base.ThemeOverlay.AppCompat.Dark"/>
@@ -9383,13 +9381,6 @@
         
         <attr format="reference" name="expandActivityOverflowButtonDrawable"/>
     </declare-styleable>
-    <declare-styleable name="ActivityNavigator">
-        <attr name="android:name"/>
-        <attr format="string" name="action"/>
-        <attr format="string" name="data"/>
-        <attr format="string" name="dataPattern"/>
-        <attr format="string" name="targetPackage"/>
-    </declare-styleable>
     <declare-styleable name="AlertDialog">
         <attr name="android:layout"/>
         <attr format="reference" name="buttonPanelSideLayout"/>
@@ -11570,40 +11561,6 @@
             <enum name="staticPostLayout" value="2"/>
             <enum name="staticLayout" value="3"/>
         </attr><attr format="color" name="telltales_tailColor"/><attr format="float" name="telltales_tailScale"/></declare-styleable>
-    <declare-styleable name="NavAction">
-        <attr name="android:id"/>
-        <attr format="reference" name="destination"/>
-        <attr format="boolean" name="launchSingleTop"/>
-        <attr format="boolean" name="restoreState"/>
-        <attr format="reference" name="popUpTo"/>
-        <attr format="boolean" name="popUpToInclusive"/>
-        <attr format="boolean" name="popUpToSaveState"/>
-        <attr format="reference" name="enterAnim"/>
-        <attr format="reference" name="exitAnim"/>
-        <attr format="reference" name="popEnterAnim"/>
-        <attr format="reference" name="popExitAnim"/>
-    </declare-styleable>
-    <declare-styleable name="NavArgument">
-        <attr name="android:name"/>
-        <attr name="android:defaultValue"/>
-        <attr format="boolean" name="nullable"/>
-        <attr format="string" name="argType"/>
-    </declare-styleable>
-    <declare-styleable name="NavDeepLink">
-        <attr format="string" name="uri"/>
-        <attr format="string" name="action"/>
-        <attr format="string" name="mimeType"/>
-        <attr name="android:autoVerify"/>
-    </declare-styleable>
-    <declare-styleable name="NavGraphNavigator">
-        <attr format="reference" name="startDestination"/>
-    </declare-styleable>
-    <declare-styleable name="NavHost">
-        <attr format="reference" name="navGraph"/>
-    </declare-styleable>
-    <declare-styleable name="NavInclude">
-        <attr format="reference" name="graph"/>
-    </declare-styleable>
     <declare-styleable name="NavigationBarActiveIndicator">
     
     <attr name="android:color"/>
@@ -11754,11 +11711,6 @@
     
     <attr format="dimension" name="drawerLayoutCornerSize"/>
   </declare-styleable>
-    <declare-styleable name="Navigator">
-        <attr name="android:id"/>
-        <attr format="string" name="route"/>
-        <attr name="android:label"/>
-    </declare-styleable>
     <declare-styleable name="OnClick"><attr name="targetId"/><attr name="clickAction">
             <flag name="toggle" value="0x0011"/>
             <flag name="transitionToEnd" value="0x0001"/>

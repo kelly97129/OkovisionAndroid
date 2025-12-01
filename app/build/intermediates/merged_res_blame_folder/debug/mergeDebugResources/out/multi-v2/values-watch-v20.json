@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.okovision.android.app-mergeDebugResources-73:/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "com.okovision.android.app-mergeDebugResources-61:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\david\\.gradle\\caches\\8.9\\transforms\\9c4c1a13b13a15f7bf3393136768f6fc\\transformed\\appcompat-1.6.1\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "C:\\Users\\david\\.gradle\\caches\\8.9\\transforms\\0a80d7960fbe666de5e2e0622c115096\\transformed\\appcompat-1.7.0\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",
