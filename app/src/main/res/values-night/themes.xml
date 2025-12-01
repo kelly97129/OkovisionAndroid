@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Okovision" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/okv_primary</item>
+        <item name="colorOnPrimary">@color/okv_on_primary</item>
+        <item name="colorSecondary">@color/okv_secondary</item>
+        <item name="colorOnSecondary">@color/okv_on_secondary</item>
+
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+    </style>
+
+</resources>

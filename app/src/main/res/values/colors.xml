@@ -1,6 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_500">#6200EE</color>
-    <color name="purple_700">#3700B3</color>
-    <color name="teal_200">#03DAC5</color>
-    <color name="ic_launcher_background">#000000</color>
+    <color name="okv_primary">#4F7FFF</color>
+    <color name="okv_on_primary">#FFFFFF</color>
+
+    <color name="okv_secondary">#7AA6FF</color>
+    <color name="okv_on_secondary">#001B3A</color>
+
+    <!-- utilisé par ic_launcher.xml si tu es en adaptive icon -->
+    <color name="ic_launcher_background">#121212</color>
 </resources>
