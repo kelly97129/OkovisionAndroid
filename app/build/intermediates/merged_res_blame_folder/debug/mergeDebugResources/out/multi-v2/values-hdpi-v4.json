@@ -4,7 +4,7 @@
             "outputFile": "com.okovision.android.app-mergeDebugResources-61:/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\david\\.gradle\\caches\\8.9\\transforms\\0a80d7960fbe666de5e2e0622c115096\\transformed\\appcompat-1.7.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "source": "C:\\Users\\david\\.gradle\\caches\\8.9\\transforms\\9e6543b3a724bb236627f4292539b7ff\\transformed\\appcompat-1.7.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

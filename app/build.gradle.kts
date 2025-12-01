@@ -2,7 +2,6 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("org.jetbrains.kotlin.plugin.compose")
-    id("com.google.devtools.ksp")
 }
 
 android {
@@ -73,9 +72,6 @@ dependencies {
 
     // Datastore (déjà utilisé dans ton projet Okovision)
     implementation("androidx.datastore:datastore-preferences:1.1.1")
-
-    // KSP example (au cas où tu as des générateurs, ne gêne pas si inutilisé)
-    ksp("com.google.devtools.ksp:symbol-processing-api:2.0.21-1.0.25")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
