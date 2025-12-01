@@ -1,14 +1,41 @@
-
 package com.okovision.android
+
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.material3.Text
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 
-class MainActivity: ComponentActivity(){
- override fun onCreate(savedInstanceState: Bundle?){
-   super.onCreate(savedInstanceState)
-   setContent{ MaterialTheme{ Text("Okovision XXL placeholder") } }
- }
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            OkovisionTheme {
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.background
+                ) {
+                    HelloOkovision()
+                }
+            }
+        }
+    }
+}
+
+@Composable
+fun HelloOkovision() {
+    Text(text = "Okovision Android - squelette prêt à brancher ton UI")
+}
+
+@Preview(showBackground = true)
+@Composable
+fun HelloPreview() {
+    OkovisionTheme {
+        HelloOkovision()
+    }
 }

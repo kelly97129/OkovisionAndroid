@@ -1,11 +1,20 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.okovision.android">
 
-<manifest package="com.okovision.android" xmlns:android="http://schemas.android.com/apk/res/android">
-    <application android:name=".App" android:label="Okovision XXL" android:theme="@style/Theme.Material3.DayNight">
-        <activity android:name=".MainActivity">
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="Okovision Android"
+        android:theme="@style/Theme.Okovision">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
+
 </manifest>
