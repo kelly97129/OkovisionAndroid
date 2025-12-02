@@ -1,22 +1,25 @@
 package com.okovision.android
 
 import android.app.Application
-import androidx.work.Configuration
-import com.okovision.android.data.LiveRepository
+import androidx.room.Room
+import com.okovision.android.db.AppDb
 
-class OkovisionApp : Application(), Configuration.Provider {
-
-    lateinit var liveRepository: LiveRepository
-        private set
+class OkovisionApp : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        liveRepository = LiveRepository(applicationContext)
-        liveRepository.start()
+
+        db = Room.databaseBuilder(
+            applicationContext,
+            AppDb::class.java,
+            "okovision.db"
+        )
+            .fallbackToDestructiveMigration()
+            .build()
     }
 
-    override val workManagerConfiguration: Configuration
-        get() = Configuration.Builder()
-            .setMinimumLoggingLevel(android.util.Log.INFO)
-            .build()
+    companion object {
+        lateinit var db: AppDb
+            private set
+    }
 }

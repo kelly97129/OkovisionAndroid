@@ -3,14 +3,15 @@ pluginManagement {
         google()
         mavenCentral()
         gradlePluginPortal()
-        maven(url = "https://jitpack.io")
     }
 }
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
+        // nécessaire si tu utilises MPAndroidChart (com.github.PhilJay:MPAndroidChart)
         maven(url = "https://jitpack.io")
     }
 }

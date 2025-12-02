@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="ic_launcher_background">#121212</color>
-    <color name="okv_on_primary">#FFFFFF</color>
-    <color name="okv_on_secondary">#001B3A</color>
-    <color name="okv_primary">#4F7FFF</color>
-    <color name="okv_secondary">#7AA6FF</color>
     <string name="app_name">Okovision</string>
     <style name="Theme.Okovision" parent="Theme.Material3.DayNight.NoActionBar">
         
-        <item name="colorPrimary">@color/okv_primary</item>
-        <item name="colorOnPrimary">@color/okv_on_primary</item>
-
-        <item name="colorSecondary">@color/okv_secondary</item>
-        <item name="colorOnSecondary">@color/okv_on_secondary</item>
-
         <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
     </style>
 </resources>
