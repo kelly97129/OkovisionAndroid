@@ -7,6 +7,8 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 
+private val jakewharton: Any
+
 object Clients {
     private val json = Json { ignoreUnknownKeys = true }
     private fun baseClient(): OkHttpClient = OkHttpClient.Builder()
